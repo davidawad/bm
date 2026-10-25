@@ -1,0 +1,25 @@
+{
+  "inbox": "bookmark_bar/Inbox",
+  "min_score": 300,
+  "llm": "",
+  "folders": [
+    {
+      "path": "bookmark_bar/Dev/AI",
+      "description": "LLM tools, papers, APIs and model hubs",
+      "words": ["llm", "gpt", "transformer", "diffusion"],
+      "hosts": ["huggingface.co", "openrouter.ai"]
+    },
+    {
+      "path": "bookmark_bar/Dev/Code",
+      "description": "Repositories and package registries",
+      "hosts": ["github.com", "gitlab.com", "crates.io", "npmjs.com"],
+      "strict": true
+    },
+    {
+      "path": "bookmark_bar/Money/Filings",
+      "description": "SEC filings and company reports",
+      "words": ["10-k", "edgar", "prospectus"],
+      "hosts": ["sec.gov"]
+    }
+  ]
+}

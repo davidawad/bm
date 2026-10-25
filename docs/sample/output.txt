@@ -1,0 +1,22 @@
+$ bm pull file --path docs/sample/Bookmarks
+9 new, 0 already known
+
+$ bm tree --depth 2
+bookmark_bar (9)
+  Cooking (2)
+  Dev (5)
+  Inbox (2)
+
+$ bm classify
+  ok 498	bookmark_bar/Dev/Rust	serde and tokio async tutorial	https://example.com/tokio-serde-async
+  ok 4200	bookmark_bar/Cooking	Weeknight pasta ideas	https://food.example/pasta-night
+
+$ bm ls --host docs.rs
+folder                 title                url
+bookmark_bar/Dev/Rust  tokio async runtime  https://docs.rs/tokio/
+
+$ bm export --format toon --fields title,url --limit 3
+bookmarks[3]{title,url}:
+  The Rust Book,"https://doc.rust-lang.org/book/"
+  tokio async runtime,"https://docs.rs/tokio/"
+  serde documentation,"https://serde.rs/"

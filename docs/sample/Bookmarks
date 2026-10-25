@@ -1,0 +1,15 @@
+{"roots":{"bookmark_bar":{"children":[
+{"type":"folder","name":"Dev","children":[
+{"type":"folder","name":"Rust","children":[
+{"type":"url","name":"The Rust Book","url":"https://doc.rust-lang.org/book/","date_added":"13350000000000000"},
+{"type":"url","name":"tokio async runtime","url":"https://docs.rs/tokio/","date_added":"13360000000000000"},
+{"type":"url","name":"serde documentation","url":"https://serde.rs/","date_added":"13370000000000000"}]},
+{"type":"folder","name":"AI","children":[
+{"type":"url","name":"Hugging Face models","url":"https://huggingface.co/models","date_added":"13380000000000000"},
+{"type":"url","name":"Attention Is All You Need","url":"https://arxiv.org/abs/1706.03762","date_added":"13380000000000001"}]}]},
+{"type":"folder","name":"Cooking","children":[
+{"type":"url","name":"Pasta carbonara recipe","url":"https://food.example/carbonara","date_added":"13340000000000000"},
+{"type":"url","name":"Sourdough starter guide","url":"https://food.example/sourdough","date_added":"13341000000000000"}]},
+{"type":"url","name":"serde and tokio async tutorial","url":"https://example.com/tokio-serde-async","date_added":"13390000000000000"},
+{"type":"url","name":"Weeknight pasta ideas","url":"https://food.example/pasta-night","date_added":"13390000000000001"}]},
+"other":{"children":[]},"synced":{"children":[]}},"version":1}

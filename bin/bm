@@ -1,0 +1,13 @@
+#!/bin/sh
+set -eu
+# bm: browser-independent bookmark store (Bend 2). Builds main.bend from the repo root on first use and whenever a .bend file changes.
+src="$(cd "$(dirname "$(realpath "$0")")/.." && pwd)"
+cache="${XDG_CACHE_HOME:-$HOME/.cache}/bm"
+bin="$cache/bm"
+mkdir -p "$cache"
+# The default DB directory must exist (bm does not create directories).
+[ -n "${BM_DB:-}" ] || mkdir -p "$HOME/.local/share/bm"
+if [ ! -x "$bin" ] || [ -n "$(find "$src" -maxdepth 1 -name '*.bend' -newer "$bin" 2>/dev/null | head -1)" ]; then
+  (cd "$src" && bend main.bend -o "$bin.tmp" >/dev/null 2>&1 && mv -f "$bin.tmp" "$bin") || { echo "bm: build failed (cd $src && bend main.bend --check-only)" >&2; exit 1; }
+fi
+exec "$bin" "$@"

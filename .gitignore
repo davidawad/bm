@@ -1,0 +1,9 @@
+/bm
+/bm-main
+/bm-check
+*.tmp
+*.bm-backup
+bm.json
+bm.config.json
+.DS_Store
+.beads/
